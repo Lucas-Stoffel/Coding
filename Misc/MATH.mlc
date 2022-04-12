@@ -1,0 +1,16 @@
+MATH    CSECT
+		 
+		 BALR  R12,0
+		 USING BASE,R12
+
+BASE	 L	   R2,X
+		 A     R2,X
+		 A	   R2,X
+		 ST    R2,W
+		 BCR   X'F',R14
+
+X		 DC    F'16'
+Y		 DC    F'10'
+Z		 DC    F'3'
+W		 DS    F
+		 END   MATH
